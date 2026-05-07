@@ -1,7 +1,0 @@
-2026-05-07 12:13:13,597 | INFO | Downloading input data from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
-2026-05-07 12:14:05,784 | INFO | Downloaded yellow_tripdata_2024-01.parquet
-2026-05-07 12:14:08,197 | INFO | Raw row count (pandas fallback): 2964624
-2026-05-07 12:14:42,770 | INFO | Wrote dim_datetime rows=749
-2026-05-07 12:14:42,776 | INFO | Wrote dim_payment rows=5
-2026-05-07 12:14:42,779 | INFO | Wrote dim_trip_category rows=3
-2026-05-07 12:14:43,730 | INFO | Wrote fact_trips rows=2964624
