@@ -19,13 +19,18 @@ except Exception:
     PYSPARK_AVAILABLE = False
 
 
+HDFS_DEFAULT_FS = os.environ.get("A3_HDFS_DEFAULTFS", "hdfs://localhost:9000")
 PROCESSED_BASE = os.environ.get("A3_PROCESSED_BASE", "hdfs:///warehouse/processed/nyc_taxi")
 OUTPUT_DIR = Path("outputs")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def spark_session():
-    return SparkSession.builder.appName("A3-NYC-Taxi-Analytics").getOrCreate()
+    return (
+        SparkSession.builder.appName("A3-NYC-Taxi-Analytics")
+        .config("spark.hadoop.fs.defaultFS", HDFS_DEFAULT_FS)
+        .getOrCreate()
+    )
 
 
 def run_queries(spark):

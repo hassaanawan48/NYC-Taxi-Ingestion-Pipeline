@@ -26,6 +26,7 @@ except Exception:
 DATA_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
 RAW_FILE = "yellow_tripdata_2024-01.parquet"
 # A3 must build on A2 HDFS output.
+HDFS_DEFAULT_FS = os.environ.get("A3_HDFS_DEFAULTFS", "hdfs://localhost:9000")
 RAW_BASE = os.environ.get("A3_RAW_BASE", "hdfs:///warehouse/raw/nyc_taxi/year=2024/month=01")
 PROCESSED_BASE = os.environ.get("A3_PROCESSED_BASE", "hdfs:///warehouse/processed/nyc_taxi")
 RUN_MONTH = "2024-01"
@@ -61,6 +62,7 @@ def ensure_input_file() -> str:
 def build_spark():
     return (
         SparkSession.builder.appName("A3-NYC-Taxi-ETL")
+        .config("spark.hadoop.fs.defaultFS", HDFS_DEFAULT_FS)
         .config("spark.sql.shuffle.partitions", "16")
         .config("spark.sql.sources.partitionOverwriteMode", "dynamic")
         .getOrCreate()

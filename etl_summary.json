@@ -1,0 +1,32 @@
+{
+  "dim_datetime": {
+    "row_count": 749,
+    "nulls_in_keys": {
+      "datetime_key": 0,
+      "pickup_date": 0
+    }
+  },
+  "dim_payment": {
+    "row_count": 5,
+    "nulls_in_keys": {
+      "payment_type": 0
+    }
+  },
+  "dim_trip_category": {
+    "row_count": 3,
+    "nulls_in_keys": {
+      "distance_bucket": 0
+    }
+  },
+  "fact_trips": {
+    "row_count": 2964624,
+    "nulls_in_keys": {
+      "datetime_key": 0,
+      "payment_type": 0,
+      "distance_bucket": 0
+    }
+  },
+  "raw": {
+    "row_count": 2964624
+  }
+}

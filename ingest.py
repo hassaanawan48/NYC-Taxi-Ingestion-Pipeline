@@ -21,7 +21,8 @@ HDFS_TARGET_DIR = f"{HDFS_BASE_DIR}/year={YEAR}/month={MONTH}"
 
 # Hadoop command path (uses environment variable if set, otherwise default)
 HADOOP_HOME = os.environ.get("HADOOP_HOME", r"D:\softwares\hadoop-3.3.6")
-HDFS_CMD = os.path.join(HADOOP_HOME, "bin", "hdfs.cmd")
+HDFS_BIN = "hdfs.cmd" if os.name == "nt" else "hdfs"
+HDFS_CMD = os.path.join(HADOOP_HOME, "bin", HDFS_BIN)
 
 # Logging setup: console and file
 logging.basicConfig(

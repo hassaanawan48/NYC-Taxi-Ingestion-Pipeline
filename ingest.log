@@ -1,0 +1,53 @@
+2026-05-07 13:03:10,936 - INFO - ==================================================
+2026-05-07 13:03:10,937 - INFO - Starting HDFS Ingestion Pipeline for NYC Taxi Data
+2026-05-07 13:03:10,937 - INFO - ==================================================
+2026-05-07 13:03:10,937 - INFO - Downloading from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet ...
+2026-05-07 13:04:03,416 - INFO - Download complete: yellow_tripdata_2024-01.parquet (47.65 MB)
+2026-05-07 13:04:03,418 - INFO - Validating yellow_tripdata_2024-01.parquet
+2026-05-07 13:04:03,419 - INFO - File size: 47.65 MB
+2026-05-07 13:04:03,419 - INFO - File format: Parquet (binary columnar)
+2026-05-07 13:04:03,419 - INFO - Encoding detection: Not applicable (Parquet is a binary format, no text encoding)
+2026-05-07 13:04:04,031 - INFO - Row count: 2964624
+2026-05-07 13:04:04,031 - INFO - Column count: 19
+2026-05-07 13:04:04,031 - INFO - Row count validation passed (≥500,000)
+2026-05-07 13:04:04,031 - INFO - Column count validation passed (≥8)
+2026-05-07 13:04:04,085 - INFO - Data types (first 5): [('VendorID', 'int32'), ('tpep_pickup_datetime', 'datetime64[us]'), ('tpep_dropoff_datetime', 'datetime64[us]'), ('passenger_count', 'float64'), ('trip_distance', 'float64')]
+2026-05-07 13:04:04,086 - INFO - Creating HDFS directory: /warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-07 13:04:44,396 - INFO - ==================================================
+2026-05-07 13:04:44,396 - INFO - Starting HDFS Ingestion Pipeline for NYC Taxi Data
+2026-05-07 13:04:44,396 - INFO - ==================================================
+2026-05-07 13:04:44,396 - INFO - File already exists locally: yellow_tripdata_2024-01.parquet
+2026-05-07 13:04:44,396 - INFO - Validating yellow_tripdata_2024-01.parquet
+2026-05-07 13:04:44,396 - INFO - File size: 47.65 MB
+2026-05-07 13:04:44,396 - INFO - File format: Parquet (binary columnar)
+2026-05-07 13:04:44,396 - INFO - Encoding detection: Not applicable (Parquet is a binary format, no text encoding)
+2026-05-07 13:04:44,827 - INFO - Row count: 2964624
+2026-05-07 13:04:44,828 - INFO - Column count: 19
+2026-05-07 13:04:44,828 - INFO - Row count validation passed (≥500,000)
+2026-05-07 13:04:44,828 - INFO - Column count validation passed (≥8)
+2026-05-07 13:04:44,831 - INFO - Data types (first 5): [('VendorID', 'int32'), ('tpep_pickup_datetime', 'datetime64[us]'), ('tpep_dropoff_datetime', 'datetime64[us]'), ('passenger_count', 'float64'), ('trip_distance', 'float64')]
+2026-05-07 13:04:44,832 - INFO - Creating HDFS directory: /warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-07 13:04:46,147 - INFO - Directory created/verified: /warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-07 13:04:46,147 - INFO - Uploading yellow_tripdata_2024-01.parquet to /warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-07 13:04:48,477 - INFO - Upload successful
+2026-05-07 13:04:49,464 - INFO - File confirmed in HDFS: /warehouse/raw/nyc_taxi/year=2024/month=01/yellow_tripdata_2024-01.parquet
+2026-05-07 13:04:49,464 - INFO - Pipeline completed successfully.
+2026-05-07 13:42:20,956 - INFO - ==================================================
+2026-05-07 13:42:20,959 - INFO - Starting HDFS Ingestion Pipeline for NYC Taxi Data
+2026-05-07 13:42:20,959 - INFO - ==================================================
+2026-05-07 13:42:20,959 - INFO - File already exists locally: yellow_tripdata_2024-01.parquet
+2026-05-07 13:42:20,959 - INFO - Validating yellow_tripdata_2024-01.parquet
+2026-05-07 13:42:20,959 - INFO - File size: 47.65 MB
+2026-05-07 13:42:20,959 - INFO - File format: Parquet (binary columnar)
+2026-05-07 13:42:20,959 - INFO - Encoding detection: Not applicable (Parquet is a binary format, no text encoding)
+2026-05-07 13:42:21,380 - INFO - Row count: 2964624
+2026-05-07 13:42:21,381 - INFO - Column count: 19
+2026-05-07 13:42:21,381 - INFO - Row count validation passed (≥500,000)
+2026-05-07 13:42:21,381 - INFO - Column count validation passed (≥8)
+2026-05-07 13:42:21,382 - INFO - Data types (first 5): [('VendorID', 'int32'), ('tpep_pickup_datetime', 'datetime64[us]'), ('tpep_dropoff_datetime', 'datetime64[us]'), ('passenger_count', 'float64'), ('trip_distance', 'float64')]
+2026-05-07 13:42:21,382 - INFO - Creating HDFS directory: /warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-07 13:42:23,067 - INFO - Directory created/verified: /warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-07 13:42:23,067 - INFO - Uploading yellow_tripdata_2024-01.parquet to /warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-07 13:42:25,216 - INFO - Upload successful
+2026-05-07 13:42:26,958 - INFO - File confirmed in HDFS: /warehouse/raw/nyc_taxi/year=2024/month=01/yellow_tripdata_2024-01.parquet
+2026-05-07 13:42:26,958 - INFO - Pipeline completed successfully.

@@ -1,0 +1,4 @@
+distance_bucket,trip_count,avg_revenue_per_trip,avg_duration_min
+long,350473,64.21,36.99
+medium,890011,23.49,19.32
+short,1724140,12.58,9.35
