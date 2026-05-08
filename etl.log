@@ -44,3 +44,33 @@
 2026-05-07 13:44:12,709 | INFO | ETL completed for run month 2024-01
 2026-05-07 13:44:12,709 | INFO | Processed tables written under: hdfs:///warehouse/processed/nyc_taxi
 2026-05-07 13:44:13,304 | INFO | Closing down clientserver connection
+2026-05-08 22:58:07,147 | INFO | Reading A2 raw data from HDFS path: hdfs:///warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-08 22:58:09,873 | INFO | Closing down clientserver connection
+2026-05-08 22:59:50,359 | INFO | Reading A2 raw data from HDFS path: hdfs:///warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-08 22:59:58,311 | INFO | Raw row count: 2964624
+2026-05-08 23:01:00,817 | INFO | Writing table dim_datetime to hdfs:///warehouse/processed/nyc_taxi/dim_datetime
+2026-05-08 23:01:06,508 | INFO | Writing table dim_payment to hdfs:///warehouse/processed/nyc_taxi/dim_payment
+2026-05-08 23:01:08,029 | INFO | Writing table dim_trip_category to hdfs:///warehouse/processed/nyc_taxi/dim_trip_category
+2026-05-08 23:01:09,520 | INFO | Writing table fact_trips to hdfs:///warehouse/processed/nyc_taxi/fact_trips
+2026-05-08 23:01:17,738 | INFO | Running post-load validation
+2026-05-08 23:01:20,136 | INFO | Table=dim_datetime rows=749 nulls_in_keys={'datetime_key': 0, 'pickup_date': 0}
+2026-05-08 23:01:20,699 | INFO | Table=dim_payment rows=5 nulls_in_keys={'payment_type': 0}
+2026-05-08 23:01:21,484 | INFO | Table=dim_trip_category rows=3 nulls_in_keys={'distance_bucket': 0}
+2026-05-08 23:01:24,046 | INFO | Table=fact_trips rows=2964624 nulls_in_keys={'datetime_key': 0, 'payment_type': 0, 'distance_bucket': 0}
+2026-05-08 23:01:24,246 | INFO | ETL completed for run month 2024-01
+2026-05-08 23:01:24,246 | INFO | Processed tables written under: hdfs:///warehouse/processed/nyc_taxi
+2026-05-08 23:01:24,763 | INFO | Closing down clientserver connection
+2026-05-08 23:04:48,860 | INFO | Reading A2 raw data from HDFS path: hdfs:///warehouse/raw/nyc_taxi/year=2024/month=01
+2026-05-08 23:04:55,398 | INFO | Raw row count: 2964624
+2026-05-08 23:05:50,391 | INFO | Writing table dim_datetime to hdfs:///warehouse/processed/nyc_taxi/dim_datetime
+2026-05-08 23:05:52,866 | INFO | Writing table dim_payment to hdfs:///warehouse/processed/nyc_taxi/dim_payment
+2026-05-08 23:05:54,248 | INFO | Writing table dim_trip_category to hdfs:///warehouse/processed/nyc_taxi/dim_trip_category
+2026-05-08 23:05:55,353 | INFO | Writing table fact_trips to hdfs:///warehouse/processed/nyc_taxi/fact_trips
+2026-05-08 23:06:02,453 | INFO | Running post-load validation
+2026-05-08 23:06:04,545 | INFO | Table=dim_datetime rows=749 nulls_in_keys={'datetime_key': 0, 'pickup_date': 0}
+2026-05-08 23:06:05,197 | INFO | Table=dim_payment rows=5 nulls_in_keys={'payment_type': 0}
+2026-05-08 23:06:05,786 | INFO | Table=dim_trip_category rows=3 nulls_in_keys={'distance_bucket': 0}
+2026-05-08 23:06:08,982 | INFO | Table=fact_trips rows=2964624 nulls_in_keys={'datetime_key': 0, 'payment_type': 0, 'distance_bucket': 0}
+2026-05-08 23:06:09,251 | INFO | ETL completed for run month 2024-01
+2026-05-08 23:06:09,251 | INFO | Processed tables written under: hdfs:///warehouse/processed/nyc_taxi
+2026-05-08 23:06:09,822 | INFO | Closing down clientserver connection

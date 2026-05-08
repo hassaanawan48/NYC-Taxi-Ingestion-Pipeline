@@ -134,6 +134,8 @@ def transform_data(df):
     # A2 issue: missing categorical values -> mode-style fallback.
     cleaned = cleaned.withColumn("payment_type", F.coalesce(F.col("payment_type"), F.lit(0)))
     cleaned = cleaned.withColumn("VendorID", F.coalesce(F.col("VendorID"), F.lit(0)))
+    cleaned = cleaned.withColumn("PULocationID", F.coalesce(F.col("PULocationID"), F.lit(0)).cast("int"))
+    cleaned = cleaned.withColumn("DOLocationID", F.coalesce(F.col("DOLocationID"), F.lit(0)).cast("int"))
 
     # A3 transform requirement: derive business-friendly columns.
     cleaned = (
@@ -208,6 +210,8 @@ def build_dimensions_and_fact(df):
             "payment_type",
             "distance_bucket",
             "VendorID",
+            "PULocationID",
+            "DOLocationID",
             "passenger_count_clean",
             "trip_distance_clean",
             "trip_duration_minutes",

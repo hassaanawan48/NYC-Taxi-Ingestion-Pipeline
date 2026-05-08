@@ -52,20 +52,20 @@ Run sequence:
    - `spark-submit etl.py`
 2. Analytics + charts (reads processed HDFS parquet):
    - `spark-submit analytics.py`
-3. Final report build:
-   - `python build_final_report.py`
 
 Generated artifacts:
 
 - Query outputs (`.csv`) in `outputs/`
 - Charts (`.png`) in `outputs/`
-- Final report: `final_report.pdf`
 
 ## Notes
 
 - A3 scripts are configured to use HDFS URIs by default.
-- `etl.py` generates `etl_summary.json`; `build_final_report.py` uses it for row count verification.
+- `etl.py` generates `etl_summary.json`;
 
 ## Group Members
 
-- Add group members here before submission.
+ ## Muhammad Ahmed
+ ## CMS: 456679
+ ## Malik Muhammad Hassaan
+ ## CMS: 460233

@@ -1,0 +1,32 @@
+payment_desc,distance_bucket,VendorID,trip_count,avg_tip,avg_tip_pct_of_fare
+Credit card,long,2,210333,11.58,21.17
+Credit card,long,1,64829,8.85,16.88
+Other,long,1,2332,5.43,10.89
+Other,long,2,10839,5.3,10.94
+Credit card,medium,2,529194,4.38,22.39
+Credit card,medium,1,173895,4.05,21.47
+Credit card,short,2,1014901,2.71,27.94
+Credit card,short,1,325894,2.58,28.17
+Other,medium,1,10028,2.07,11.3
+Other,medium,2,45548,1.47,6.46
+Other,short,2,35060,0.9,6.85
+Other,short,1,36095,0.75,7.52
+No charge,long,2,1002,0.11,0.17
+Dispute,medium,2,9738,0.05,0.25
+Dispute,long,2,5586,0.04,0.26
+No charge,medium,2,1420,0.03,0.13
+Dispute,short,2,27487,0.02,0.22
+No charge,short,2,9055,0.01,0.13
+Dispute,long,1,440,0.01,0.02
+Cash,short,1,66629,0.0,0.0
+Cash,medium,1,27982,0.0,0.0
+Cash,long,1,10111,0.0,0.0
+No charge,medium,1,1676,0.0,0.02
+Other,long,6,190,0.0,0.0
+Dispute,medium,1,788,0.0,0.0
+Cash,short,2,200628,0.0,0.01
+Cash,medium,2,89689,0.0,0.01
+No charge,long,1,659,0.0,0.0
+Dispute,short,1,2589,0.0,0.0
+No charge,short,1,5785,0.0,0.0
+Cash,long,2,44152,-0.04,0.02
