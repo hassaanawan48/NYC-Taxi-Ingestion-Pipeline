@@ -11,7 +11,6 @@ This repository contains coursework deliverables for CS-404 Big Data Analytics:
 - `profile_data.py`: A2 profiling report generator.
 - `etl.py`: A3 PySpark ETL (transform, model, load, validate, optimize).
 - `analytics.py`: A3 Spark SQL queries and visualization generation.
-- `build_final_report.py`: Builds `final_report.pdf` from generated outputs.
 - `requirements.txt`: Python dependencies.
 - `Dataset_Justification.pdf`: A2 dataset rationale.
 - `profiling_report.pdf`: A2 profiling baseline.
